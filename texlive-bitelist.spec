@@ -58,3 +58,11 @@ retains outer braces.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Fri Apr 13 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.1-1
++ Revision: 790536
+- Import texlive-bitelist
+- Import texlive-bitelist
+
