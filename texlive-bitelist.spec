@@ -6,7 +6,7 @@
 # catalog-version 0.1
 Name:		texlive-bitelist
 Version:	0.1
-Release:	5
+Release:	6
 Summary:	Split list, in TeX's mouth
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/generic/bitelist
