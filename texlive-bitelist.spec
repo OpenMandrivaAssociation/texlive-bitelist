@@ -5,9 +5,9 @@ Summary:	Split list, in TeX's mouth
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/generic/bitelist
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bitelist.r25779.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bitelist.doc.r25779.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bitelist.source.r25779.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bitelist.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bitelist.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bitelist.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
