@@ -1,19 +1,13 @@
-# revision 25779
-# category Package
-# catalog-ctan /macros/generic/bitelist
-# catalog-date 2012-03-29 18:26:00 +0200
-# catalog-license lppl1.3
-# catalog-version 0.1
 Name:		texlive-bitelist
-Version:	0.1
-Release:	11
+Version:	25779
+Release:	1
 Summary:	Split list, in TeX's mouth
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/generic/bitelist
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bitelist.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bitelist.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bitelist.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bitelist.r25779.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bitelist.doc.r25779.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bitelist.source.r25779.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -32,12 +26,12 @@ macro call. A variant of the operation is provided, that
 retains outer braces.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -51,18 +45,11 @@ retains outer braces.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Fri Apr 13 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.1-1
-+ Revision: 790536
-- Import texlive-bitelist
-- Import texlive-bitelist
-
