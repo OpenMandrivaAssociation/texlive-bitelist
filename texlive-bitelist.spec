@@ -3,7 +3,7 @@ Version:	25779
 Release:	2
 Summary:	Split list, in TeX's mouth
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/generic/bitelist
+URL:		https://www.ctan.org/tex-archive/macros/generic/bitelist
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bitelist.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bitelist.doc.r%{version}.tar.xz
